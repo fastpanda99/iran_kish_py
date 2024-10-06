@@ -23,5 +23,5 @@ setup(
     long_description_content_type="text/markdown",
     author="fastpanda99",
     author_email="fastpanda99@gmail.com",
-    url="https://github.com/fastpanda99/iran_kish_py",
+    url="https://fastpanda99.github.io/iran_kish_py/",
 )
