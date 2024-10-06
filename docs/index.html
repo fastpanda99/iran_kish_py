@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iran Kish Payment Gateway - Python Package</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <h1>Iran Kish Payment Gateway</h1>
+        </div>
+    </nav>
+</header>
+
+<section id="intro" class="intro-section">
+    <div class="container">
+        <h2>Secure Payment Gateway for Iran Kish</h2>
+        <p>This Python package allows users to easily integrate with the Iran Kish payment gateway for sending payment
+            requests and processing transactions.</p>
+        <a href="https://pypi.org/project/iran-kish-py/" class="btn">Get on PyPI</a>
+    </div>
+</section>
+
+<section id="features" class="features-section">
+    <div class="container">
+        <h2>Features</h2>
+        <ul>
+            <li>Send payment requests to Iran Kish gateway</li>
+            <li>Encryption using AES, RSA, and SHA-256 for secure communication</li>
+        </ul>
+    </div>
+</section>
+
+<section id="installation" class="installation-section">
+    <div class="container">
+        <h2>Installation</h2>
+        <p>Install the package via pip:</p>
+        <pre><code>pip install iran-kish-py</code></pre>
+        <p>Also, install <code>pycryptodome</code> for encryption:</p>
+        <pre><code>pip install pycryptodome</code></pre>
+    </div>
+</section>
+
+<section id="usage" class="usage-section">
+    <div class="container">
+        <h2>Usage</h2>
+        <p>To send a request to the Iran Kish bank:</p>
+        <pre><code>from iran_kish_py import request_payment
+
+pub_key_pem = """GIVEN PUB KEY FROM BANK"""
+
+BANK_RESPONSE = request_payment(
+                    terminal_id="PAYANE",
+                    acceptor_id="PAZIRANDE",
+                    password="PASSWORD",
+                    amount=1000,  # IRR
+                    pub_key_pem=pub_key_pem,
+                    request_id="12334",  # length 20
+                    revert_uri="https://example.com"  # callback url
+                )
+
+print(BANK_RESPONSE)
+            </code></pre>
+    </div>
+</section>
+
+<section id="license" class="license-section">
+    <div class="container">
+        <h2>License</h2>
+        <p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+    </div>
+</section>
+
+<section id="author" class="author-section">
+    <div class="container">
+        <h2>Author</h2>
+        <p>Developed by <a href="https://www.github.com/fastpanda99" target="_blank">FastPanda99</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Iran Kish Payment Gateway. All rights reserved.</p>
+</footer>
+</body>
+</html>
