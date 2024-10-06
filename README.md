@@ -26,7 +26,7 @@ Make sure you also have `pycryptodome` installed for encryption:
 ## Usage
 Sending request to bank
 ```python
-from iran_kish_payment_py import request_payment
+from iran_kish_py import request_payment
 
 pub_key_pem = """GIVEN PUB KEY FROM BANK"""
 
