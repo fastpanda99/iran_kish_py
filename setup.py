@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="iran_kish_py",
-    version="1.0.0",
+    version="1.0.1",
     packages=find_packages(),
     install_requires=[
         'pycryptodome',
